@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brephine Technologies Africa</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #222;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            color: #f4c542;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://images.pexels.com/photos/10189390/pexels-photo-10189390.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: #fff;
+        }
+
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            background-color: #f4c542;
+            color: #222;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #333;
+            color: #f4c542;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #f4c542;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .contact p {
+            font-size: 18px;
+        }
+
+        .contact a {
+            color: #f4c542;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .cta-btn {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            .services {
+                padding: 50px 20px;
+            }
+
+            .contact {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="#home">Brephine Technologies Africa</a>
+        </div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Your Technology Partner</h1>
+            <p>Building the future with expert Web Development, Networking, and Security Solutions.</p>
+            <a href="#services" class="cta-btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Expertise</h2>
+        <div class="service-cards">
+            <!-- Web Development Card -->
+            <div class="card">
+                <h3>Web & Software Development</h3>
+                <p>We specialize in web and software development using modern languages like <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>, <strong>Python</strong>, and <strong>PHP</strong> to build responsive and reliable solutions.</p>
+            </div>
+
+            <!-- Networking Card -->
+            <div class="card">
+                <h3>Networking Solutions</h3>
+                <p>We offer professional networking services, including installation and management of routers, switches, firewalls, and wireless access points to ensure secure and efficient connectivity.</p>
+            </div>
+
+            <!-- CCTV Installation Card -->
+            <div class="card">
+                <h3>CCTV Installation</h3>
+                <p>Our advanced CCTV installation services provide top-tier surveillance systems to ensure your premises remain safe and secure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:+254741520882">+254741520882</a></p>
+        <p>Email: <a href="mailto:info@brephinetech.com">info@brephinetech.com</a></p>
+        <p>We are located in Nakuru, Kenya. Reach out to us for all your web development, networking, and security needs.</p>
+    </section>
+
+</body>
+</html>
